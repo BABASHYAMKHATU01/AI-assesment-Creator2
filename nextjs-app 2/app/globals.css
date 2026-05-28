@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #EFEFEF;
+    color: #1E293B;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.text-xxs {
+  font-size: 0.65rem;
+}
+
+.text-slate-550 {
+  color: #5A6A80;
+}
+
+.text-slate-650 {
+  color: #475569;
+}
